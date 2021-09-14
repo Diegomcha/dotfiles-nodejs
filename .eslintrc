@@ -1,0 +1,78 @@
+{
+    "extends": "standard-with-typescript",
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "simple-import-sort"
+    ],
+    "root": true,
+    "rules": {
+        "@typescript-eslint/indent": [
+            "error",
+            4,
+            {
+                "ArrayExpression": 1,
+                "CallExpression": {
+                    "arguments": 1
+                },
+                "FunctionDeclaration": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "FunctionExpression": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "ImportDeclaration": 1,
+                "MemberExpression": 1,
+                "ObjectExpression": 1,
+                "SwitchCase": 1,
+                "VariableDeclarator": 1,
+                "flatTernaryExpressions": false,
+                "ignoreComments": false,
+                "ignoredNodes": [
+                    "TemplateLiteral *",
+                    "JSXElement",
+                    "JSXElement > *",
+                    "JSXAttribute",
+                    "JSXIdentifier",
+                    "JSXNamespacedName",
+                    "JSXMemberExpression",
+                    "JSXSpreadAttribute",
+                    "JSXExpressionContainer",
+                    "JSXOpeningElement",
+                    "JSXClosingElement",
+                    "JSXFragment",
+                    "JSXOpeningFragment",
+                    "JSXClosingFragment",
+                    "JSXText",
+                    "JSXEmptyExpression",
+                    "JSXSpreadChild"
+                ],
+                "offsetTernaryExpressions": true,
+                "outerIIFEBody": 1
+            }
+        ],
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/semi": [
+            "error",
+            "always"
+        ],
+        "@typescript-eslint/space-before-function-paren": [
+            "error",
+            "never"
+        ],
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
+        "indent": "off",
+        "semi": "off",
+        "simple-import-sort/exports": "error",
+        "simple-import-sort/imports": "error"
+    }
+}
