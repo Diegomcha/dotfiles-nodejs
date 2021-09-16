@@ -1,10 +1,10 @@
 {
   "name": "dotfiles-nodejs",
-  "version": "14.0.0",
+  "version": "16.0.0",
   "description": "Dotfiles collection for Node.js",
   "author": "Diegomcha",
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
