@@ -1,0 +1,12 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "outDir": "dist",
+        "declaration": true,
+        "sourceRoot": "/",
+        "inlineSources": true
+    }
+}
