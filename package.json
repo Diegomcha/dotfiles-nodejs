@@ -1,21 +1,17 @@
 {
   "name": "dotfiles-nodejs",
-  "version": "12.0.0",
+  "version": "14.0.0",
   "description": "Dotfiles collection for Node.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "author": "Diegomcha",
-  "license": "MIT",
   "engines": {
     "node": "14"
   },
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
     "eslint": "^7.32.0",
-    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
   }
 }

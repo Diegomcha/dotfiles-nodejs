@@ -1,17 +1,14 @@
 {
-    "extends": "standard-with-typescript",
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 2020,
-        "project": "./tsconfig.json"
-    },
+    "extends": [
+        "standard"
+    ],
     "plugins": [
-        "@typescript-eslint",
-        "simple-import-sort"
+        "simple-import-sort",
+        "import"
     ],
     "root": true,
     "rules": {
-        "@typescript-eslint/indent": [
+        "indent": [
             "error",
             4,
             {
@@ -57,22 +54,19 @@
                 "outerIIFEBody": 1
             }
         ],
-        "@typescript-eslint/no-floating-promises": "off",
-        "@typescript-eslint/no-unused-vars": "warn",
-        "@typescript-eslint/semi": [
+        "no-unused-vars": "warn",
+        "semi": [
             "error",
             "always"
         ],
-        "@typescript-eslint/space-before-function-paren": [
-            "error",
-            "never"
-        ],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
         "import/first": "error",
         "import/newline-after-import": "error",
         "import/no-duplicates": "error",
-        "indent": "off",
-        "semi": "off",
-        "simple-import-sort/exports": "error",
-        "simple-import-sort/imports": "error"
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ]
     }
 }
