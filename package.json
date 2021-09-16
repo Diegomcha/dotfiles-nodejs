@@ -6,7 +6,7 @@
   "engines": {
     "node": "14"
   },
-  "devDependencies": {
+  "dependencies": {
     "@tsconfig/node14": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "eslint": "^7.32.0",
