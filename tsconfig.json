@@ -3,7 +3,6 @@
     "compilerOptions": {
         "sourceMap": true,
         "resolveJsonModule": true,
-        "removeComments": true,
         "declaration": true,
         "sourceRoot": "/",
         "inlineSources": true
